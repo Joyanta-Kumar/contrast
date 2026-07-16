@@ -55,13 +55,11 @@
 </head>
 
 <body>
-    <main id="app"></main>
+    <main id="app">
+        <button id="btn" class="btn">Contrast</button>
+    </main>
     <script>
-        const app = document.getElementById('app');
-        const btn = document.createElement('button');
-
-        btn.textContent = 'Contrast';
-        btn.className = 'btn';
+        const btn = document.getElementById('btn');
 
         let current_bg = 'white';
 
@@ -76,10 +74,7 @@
                 document.body.style.color = 'white'
                 current_bg = 'black';
             }
-
         });
-
-        app.append(btn)
     </script>
 </body>
 
